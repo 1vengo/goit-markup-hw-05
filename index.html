@@ -476,8 +476,8 @@
         </div>
         <div class="foooter-form-container">
           <p class="footer-form-text">Subscribe</p>
-          <form class="foooter-form">
-            <label
+          <form class="footer-form">
+            <label class="footer-form-label"
               ><input
                 type="email"
                 name="user_email"
@@ -497,31 +497,46 @@
     <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-exit-btn">
-          <svg class="modal-icon-btn" width="8" height="8"><use></use></svg>
+          <svg class="modal-icon-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-exit"></use>
+          </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal-form">
           <div class="modal-form-contact">
-            <label>
+            <label class="modal-form-label" for="user_name">
               Name
-              <input type="text" id="user_name" class="modal-form-input" />
+              <input
+                type="text"
+                id="user_name"
+                class="modal-form-input"
+                name="user_name"
+              />
             </label>
-            <label>
+            <label class="modal-form-label" for="user_tel">
               Phone
-              <input type="tel" id="user_tel" class="modal-form-input" />
+              <input
+                type="tel"
+                id="user_tel"
+                class="modal-form-input"
+                name="user_tel"
+              />
             </label>
-            <label>
+            <label class="modal-form-label" for="user_email">
               Email
-              <input type="Email" id="user_email" class="modal-form-input" />
+              <input
+                type="email"
+                id="user_email"
+                class="modal-form-input"
+                name="user_email"
+              />
             </label>
-            <label>
+            <label class="modal-form-label" for="user_commnet">
               Comment
               <textarea
-                name=""
-                id=""
+                name="user_commnet"
+                id="user_commnet"
                 cols="30"
                 rows="10"
                 placeholder="Text input"
@@ -529,9 +544,14 @@
             </label>
           </div>
 
-          <div>
-            <input type="checkbox" />
-            <label
+          <div class="modal-form-submit">
+            <input
+              type="checkbox"
+              id="user-name"
+              class="modal-form-checkbox"
+              name="user-name"
+            />
+            <label class="modal-checkbox-label" for="user-name"
               >I accept the terms and conditions of the<a
                 href=""
                 class="modal-link"

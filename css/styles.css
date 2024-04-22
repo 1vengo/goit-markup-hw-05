@@ -332,15 +332,21 @@ h1 {
   z-index: 999;
   justify-content: center;
   align-items: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   border-radius: 4px;
-  max-width: 408px;
-  max-height: 584px;
+  width: 408px;
+  min-height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
   text-align: center;
@@ -356,8 +362,28 @@ h1 {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  right: 0;
-  position: static;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-exit-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-exit-icon:hover .modal-exit-icon:focus {
+  fill: #ffffff;
+}
+.modal-exit-btn:hover .modal-exit-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 .modal-form-btn {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -376,8 +402,21 @@ h1 {
 }
 .modal-form-contact {
   display: flex;
-  gap: 8px 0;
+  margin-bottom: 8px;
   flex-direction: column;
+}
+.modal-form-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-form-submit {
+  position: relative;
 }
 .modal-form-contact label {
   width: 100%;
@@ -408,6 +447,7 @@ h1 {
 .footer-icon-links {
   display: flex;
   gap: 16px;
+  margin-right: 80px;
 }
 .footer-links-item {
   width: 40px;
@@ -481,6 +521,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 .footer-form {
   display: flex;
@@ -499,6 +540,7 @@ h1 {
   border-radius: 4px;
   width: 264px;
   height: 40px;
+  padding-left: 16px;
 }
 .footer-form-icon {
   margin-left: 16px;

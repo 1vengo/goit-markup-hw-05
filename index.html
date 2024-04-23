@@ -505,32 +505,38 @@
 
         <form class="modal-form">
           <div class="modal-form-contact">
-            <label class="modal-form-label" for="user_name">
+            <label class="modal-form-label" for="user-name">
               Name
-              <input
-                type="text"
-                id="user_name"
-                class="modal-form-input"
-                name="user_name"
-              />
+              <div class="modal-form-input">
+                <input
+                  type="text"
+                  id="user-name"
+                  class="modal-input"
+                  name="user-name"
+                />
+              </div>
             </label>
             <label class="modal-form-label" for="user_tel">
               Phone
-              <input
-                type="tel"
-                id="user_tel"
-                class="modal-form-input"
-                name="user_tel"
-              />
+              <div class="modal-form-input">
+                <input
+                  type="tel"
+                  id="user_tel"
+                  class="modal-input"
+                  name="user_tel"
+                />
+              </div>
             </label>
             <label class="modal-form-label" for="user_email">
               Email
-              <input
-                type="email"
-                id="user_email"
-                class="modal-form-input"
-                name="user_email"
-              />
+              <div class="modal-form-input">
+                <input
+                  type="email"
+                  id="user_email"
+                  class="modal-input"
+                  name="user_email"
+                />
+              </div>
             </label>
             <label class="modal-form-label" for="user_commnet">
               Comment
@@ -543,23 +549,22 @@
               ></textarea>
             </label>
           </div>
-
+          <label class="modal-checkbox-label" for="user"
+            >I accept the terms and conditions of the<a
+              href=""
+              class="modal-link"
+              >Privacy Policy</a
+            ></label
+          >
           <div class="modal-form-submit">
             <input
-              type="checkbox"
+              type="text"
               id="user-name"
-              class="modal-form-checkbox"
-              name="user-name"
+              class="modal-form-text"
+              name="user"
             />
-            <label class="modal-checkbox-label" for="user-name"
-              >I accept the terms and conditions of the<a
-                href=""
-                class="modal-link"
-                >Privacy Policy</a
-              ></label
-            >
+            <button type="submit" class="modal-form-btn">Send</button>
           </div>
-          <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>

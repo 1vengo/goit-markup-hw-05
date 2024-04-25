@@ -386,7 +386,7 @@ h1 {
   border: none;
 }
 
-.modal-form-contact {
+.modal-form-block {
   display: flex;
   margin-bottom: 8px;
   flex-direction: column;

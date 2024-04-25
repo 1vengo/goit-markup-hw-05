@@ -505,8 +505,8 @@
 
         <form class="modal-form">
           <div class="modal-form-contact">
-            <label class="modal-form-label" for="user-name"></label>
-            Name
+            <label class="modal-form-label" for="user-name">Name</label>
+
             <div class="modal-form-input">
               <input
                 type="text"
@@ -519,8 +519,8 @@
               </svg>
             </div>
 
-            <label class="modal-form-label" for="user-tel"></label>
-            Phone
+            <label class="modal-form-label" for="user-tel">Phone</label>
+
             <div class="modal-form-input">
               <input
                 type="tel"
@@ -533,8 +533,8 @@
               </svg>
             </div>
 
-            <label class="modal-form-label" for="user-email"></label>
-            Email
+            <label class="modal-form-label" for="user-email">Email</label>
+
             <div class="modal-form-input">
               <input
                 type="email"
@@ -547,8 +547,8 @@
               </svg>
             </div>
 
-            <label class="modal-form-label" for="user-commnet"> </label>
-            Comment
+            <label class="modal-form-label" for="user-commnet">Comment </label>
+
             <textarea
               name="user-commnet"
               id="user-commnet"
@@ -562,16 +562,18 @@
             <input
               type="checkbox"
               id="user-privacy"
-              class="modal-form-text visually-hidden"
+              class="modal-form-checkbox visually-hidden"
               name="user-privacy"
               value="true"
             />
             <label class="modal-checkbox-label" for="user-privacy"
-              >I accept the terms and conditions of the<a
-                href=""
-                class="modal-link"
-                >Privacy Policy</a
-              ></label
+              ><span class="checkbox">
+                <svg class="form-accept-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-accepted"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="modal-link">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-form-btn">Send</button>
